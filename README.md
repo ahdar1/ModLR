@@ -17,11 +17,16 @@ install.packages("ModLR_0.1.22.tar.gz", repos = NULL, type = "source")
 ```
 ## Example
 
+```{r}
+
 library(ModLR)
+
 set.seed(123)
 
 n <- 400
+
 x <- rnorm(n)
+
 z <- 0.5 * x + sqrt(1 - 0.5^2) * rnorm(n)
 
 b0 <- 0
@@ -45,7 +50,7 @@ johnson_neyman(result)
 
 compare_models(result)
 
-
+```
 
 
 

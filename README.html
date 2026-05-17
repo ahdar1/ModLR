@@ -367,9 +367,12 @@ ModLR_0.1.22.tar.gz</a></p>
 </div>
 <div id="example" class="section level2">
 <h2>Example</h2>
-<p>library(ModLR) set.seed(123)</p>
-<p>n &lt;- 400 x &lt;- rnorm(n) z &lt;- 0.5 * x + sqrt(1 - 0.5^2) *
-rnorm(n)</p>
+<p>```{r}</p>
+<p>library(ModLR)</p>
+<p>set.seed(123)</p>
+<p>n &lt;- 400</p>
+<p>x &lt;- rnorm(n)</p>
+<p>z &lt;- 0.5 * x + sqrt(1 - 0.5^2) * rnorm(n)</p>
 <p>b0 &lt;- 0 b1 &lt;- 0.3<br />
 b2 &lt;- 0.3 b3 &lt;- 0.8<br />
 y &lt;- b0 + b1 * x + b2 * z + b3 * x * z + rnorm(n, sd = 1)</p>
@@ -381,6 +384,7 @@ y &lt;- b0 + b1 * x + b2 * z + b3 * x * z + rnorm(n, sd = 1)</p>
 <p>plot_moderation(result)</p>
 <p>johnson_neyman(result)</p>
 <p>compare_models(result)</p>
+<p>```</p>
 </div>
 <div id="citation" class="section level2">
 <h2>Citation</h2>
