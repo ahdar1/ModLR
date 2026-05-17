@@ -37,7 +37,7 @@ b2 <- 0.3
 
 b3 <- 0.8   
 
-y <- b0 +   b1 * x +   b2 * z +   b3 * x * z +   rnorm(n, sd = 1)
+y <- b0 + b1 * x + b2 * z + b3 * x * z + rnorm(n, sd = 1)
 
 dat <- data.frame(x, z, y)
 
