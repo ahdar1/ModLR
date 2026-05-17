@@ -9,7 +9,7 @@ Provides a robust implementation of information-theoretic moderation analysis
 
 Download the latest version:
 
-👉 `ModLR_0.1.22.tar.gz`
+👉 [Download ModLR_0.1.22.tar.gz](./ModLR_0.1.22.tar.gz)
 
 Then install in R:
 
