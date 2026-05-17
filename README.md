@@ -15,3 +15,7 @@ Then install in R:
 
 ```r
 install.packages("ModLR_0.1.22.tar.gz", repos = NULL, type = "source")
+
+## Citation
+
+Daryanto, A. (2019). Avoiding spurious moderation effects: An information-theoretic approach to moderation analysis. Journal of Business Research, 103, 110-118.
