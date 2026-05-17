@@ -22,3 +22,8 @@ Daryanto, A. (2019). Avoiding spurious moderation effects: An information-theore
 The CRAN URL, hopefully, will appear soon.
 
 A manuscript describing this package is currently being prepared for submission to The R Journal.
+
+## Author
+
+Ahmad Daryanto, ahdar_2000@yahoo.com
+Website: [https://www.lancaster.ac.uk/lums/people/anto-daryanto](https://www.lancaster.ac.uk/lums/people/anto-daryanto)
