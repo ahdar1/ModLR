@@ -15,6 +15,38 @@ Then install in R:
 ```r
 install.packages("ModLR_0.1.22.tar.gz", repos = NULL, type = "source")
 ```
+## Example
+
+library(ModLR)
+set.seed(123)
+
+n <- 400
+x <- rnorm(n)
+z <- 0.5 * x + sqrt(1 - 0.5^2) * rnorm(n)
+
+b0 <- 0
+b1 <- 0.3      
+b2 <- 0.3
+b3 <- 0.8     
+y <- b0 +   b1 * x +   b2 * z +   b3 * x * z +   rnorm(n, sd = 1)
+
+dat <- data.frame(x, z, y)
+
+
+result <- moderated_regression(dat, iv = "x", moderator = "z", dv = "y") 
+
+print(result)
+
+simple_slopes(result)
+
+plot_moderation(result)
+
+compare_models(result)
+
+johnson_neyman(result)
+
+
+
 
 ## Citation
 
