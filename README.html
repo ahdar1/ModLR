@@ -373,9 +373,11 @@ ModLR_0.1.22.tar.gz</a></p>
 <p>n &lt;- 400</p>
 <p>x &lt;- rnorm(n)</p>
 <p>z &lt;- 0.5 * x + sqrt(1 - 0.5^2) * rnorm(n)</p>
-<p>b0 &lt;- 0 b1 &lt;- 0.3<br />
-b2 &lt;- 0.3 b3 &lt;- 0.8<br />
-y &lt;- b0 + b1 * x + b2 * z + b3 * x * z + rnorm(n, sd = 1)</p>
+<p>b0 &lt;- 0</p>
+<p>b1 &lt;- 0.3</p>
+<p>b2 &lt;- 0.3</p>
+<p>b3 &lt;- 0.8</p>
+<p>y &lt;- b0 + b1 * x + b2 * z + b3 * x * z + rnorm(n, sd = 1)</p>
 <p>dat &lt;- data.frame(x, z, y)</p>
 <p>result &lt;- moderated_regression(dat, iv = “x”, moderator = “z”, dv
 = “y”)</p>
