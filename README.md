@@ -22,7 +22,7 @@ install.packages("ModLR_0.1.22.tar.gz", repos = NULL, type = "source")
 
 * The CRAN URL, hopefully, will appear soon.
 
-* A manuscript describing this package is currently being prepared for submission to The R Journal.
+* A manuscript describing this package is currently being prepared for submission to [The R Journal](https://journal.r-project.org/).
 
 ## Maintainer
 
