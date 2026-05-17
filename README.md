@@ -14,6 +14,7 @@ Then install in R:
 
 ```r
 install.packages("ModLR_0.1.22.tar.gz", repos = NULL, type = "source")
+```
 
 ## Citation
 
