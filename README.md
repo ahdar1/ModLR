@@ -41,9 +41,11 @@ simple_slopes(result)
 
 plot_moderation(result)
 
+johnson_neyman(result)
+
 compare_models(result)
 
-johnson_neyman(result)
+
 
 
 
