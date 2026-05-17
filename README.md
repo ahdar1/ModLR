@@ -26,6 +26,6 @@ A manuscript describing this package is currently being prepared for submission 
 
 ## Maintainer
 
-Ahmad Daryanto, ahdar_2000@yahoo.com
+Ahmad Daryanto, ahdar_2000atyahoo.com
 
 Website: [https://sites.google.com/view/ahmaddaryanto/](https://sites.google.com/view/ahmaddaryanto/)
