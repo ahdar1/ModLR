@@ -28,4 +28,4 @@ A manuscript describing this package is currently being prepared for submission 
 
 Ahmad Daryanto, ahdar_2000@yahoo.com
 
-Website: [https://www.lancaster.ac.uk/lums/people/anto-daryanto](https://www.lancaster.ac.uk/lums/people/anto-daryanto)
+Website: [https://sites.google.com/view/ahmaddaryanto/](https://sites.google.com/view/ahmaddaryanto/)
