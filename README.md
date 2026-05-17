@@ -1,4 +1,4 @@
-This is an R package. It provides a robust implementation of information-theoretic moderation analysis
+This R package implements a robust implementation of information-theoretic moderation analysis
     using multi-model inference based on Akaike's Information Criterion (AIC and AICc).
     The package allows researchers to compare alternative moderation models and avoid
     spurious moderation effects arising from nonlinear relationships.
