@@ -49,7 +49,7 @@ johnson_neyman(result)
 
 compare_models(result)
 
-compare_moedls(results, models=C(2,4))
+compare_models(results, models=C(4, 5, 6))
 
 ```
 
