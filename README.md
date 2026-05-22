@@ -6,7 +6,7 @@ This R package implements a robust implementation of information-theoretic moder
 
 ## Install
 
-Download the latest (beta) version (2026-05-21):
+Download the latest (beta) version (2026-05-22):
 
 👉 [Download ModLR_0.1.25.tar.gz](./ModLR_0.1.25.tar.gz)
 
