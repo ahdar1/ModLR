@@ -13,7 +13,7 @@ Download the latest (beta) version (2026-05-24):
 Then install in R:
 
 ```r
-install.packages("ModLR_0.1.24.tar.gz", repos = NULL, type = "source")
+install.packages("ModLR_0.1.29.tar.gz", repos = NULL, type = "source")
 ```
 ## Example
 
