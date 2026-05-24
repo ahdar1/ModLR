@@ -8,7 +8,7 @@ This R package implements a robust implementation of information-theoretic moder
 
 Download the latest (beta) version (2026-05-24):
 
-👉 [Download ModLR_0.1.27.tar.gz](./ModLR_0.1.27.tar.gz)
+👉 [Download ModLR_0.1.28.tar.gz](./ModLR_0.1.28.tar.gz)
 
 Then install in R:
 
@@ -58,6 +58,19 @@ plot_moderation(result)
 johnson_neyman(result)
 
 compare_models(result)
+
+# note: by default, in moderated_regression() function, predictors are centered.
+# otherwise, set `center=FALSE`
+
+result <- moderated_regression(
+  dat,
+  iv = "x",
+  moderator = "z",
+  dv = "y",
+  covariates = c("w1", "w2"),
+  center = FALSE
+)
+print(result)
 
 ```
 
