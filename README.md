@@ -75,8 +75,6 @@ print(result)
 ```
 
 
-
-
 ## Citation
 
 * Daryanto, A. (2019). Avoiding spurious moderation effects: An information-theoretic approach to moderation analysis. Journal of Business Research, 103, 110-118.
