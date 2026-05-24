@@ -1,5 +1,5 @@
 This R package implements a robust implementation of information-theoretic moderation analysis
-    using multi-model inference based on Akaike's Information Criterion (AIC and AICc).
+    using multimodel inference based on Akaike's Information Criterion (AIC and AICc).
     The package allows researchers to compare alternative moderation models and avoid
     spurious moderation effects arising from nonlinear relationships.
   
@@ -8,7 +8,7 @@ This R package implements a robust implementation of information-theoretic moder
 
 Download the latest (beta) version (2026-05-24):
 
-👉 [Download ModLR_0.1.26.tar.gz](./ModLR_0.1.26.tar.gz)
+👉 [Download ModLR_0.1.27.tar.gz](./ModLR_0.1.27.tar.gz)
 
 Then install in R:
 
@@ -18,7 +18,6 @@ install.packages("ModLR_0.1.24.tar.gz", repos = NULL, type = "source")
 ## Example
 
 ```{r}
-
 library(ModLR)
 
 set.seed(123)
@@ -26,22 +25,30 @@ set.seed(123)
 n <- 400
 
 x <- rnorm(n)
-w1 <- rnorm(n) # covariates
-w2 <- rnorm(n) # covariates
-
+w1 <- rnorm(n)
+w2 <- rnorm(n)
 
 z <- 0.5 * x + sqrt(1 - 0.5^2) * rnorm(n)
 
 b0 <- 0
 
-b1 <- 0.3     
+b1 <- 0.3
 
-y <- b0 + b1 * x^2 + rnorm(n, sd = 1)
+b2 <- 0.3
 
-dat <- data.frame(x, z, y)
+b3 <- 0.8
 
-result <- moderated_regression(dat, iv = "x", moderator = "z", dv = "y") 
+y <- b0 + b1 * x + b2 * z + b3 * x * z + rnorm(n, sd = 1)
 
+dat <- data.frame(w1, w2, x, z, y)
+
+result <- moderated_regression(
+  dat,
+  iv = "x",
+  moderator = "z",
+  dv = "y",
+  covariates = c("w1", "w2")
+)
 print(result)
 
 simple_slopes(result)
@@ -51,18 +58,6 @@ plot_moderation(result)
 johnson_neyman(result)
 
 compare_models(result)
-
-compare_models(results, models=C(4, 5, 6))
-
-# with covariates
-
-result <- moderated_regression(
-  dat,
-  iv = "x",
-  moderator = "z",
-  dv = "y",
-  covariates = c("w1", "w2")
-)
 
 ```
 
