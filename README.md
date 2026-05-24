@@ -6,9 +6,9 @@ This R package implements a robust implementation of information-theoretic moder
 
 ## Install
 
-Download the latest (beta) version (2026-05-22):
+Download the latest (beta) version (2026-05-24):
 
-👉 [Download ModLR_0.1.25.tar.gz](./ModLR_0.1.25.tar.gz)
+👉 [Download ModLR_0.1.26.tar.gz](./ModLR_0.1.26.tar.gz)
 
 Then install in R:
 
@@ -26,6 +26,9 @@ set.seed(123)
 n <- 400
 
 x <- rnorm(n)
+w1 <- rnorm(n) # covariates
+w2 <- rnorm(n) # covariates
+
 
 z <- 0.5 * x + sqrt(1 - 0.5^2) * rnorm(n)
 
@@ -50,6 +53,16 @@ johnson_neyman(result)
 compare_models(result)
 
 compare_models(results, models=C(4, 5, 6))
+
+# with covariates
+
+result <- moderated_regression(
+  dat,
+  iv = "x",
+  moderator = "z",
+  dv = "y",
+  covariates = c("w1", "w2")
+)
 
 ```
 
