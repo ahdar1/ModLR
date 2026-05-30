@@ -6,7 +6,7 @@ This R package implements a robust implementation of information-theoretic moder
 
 ## Install
 
-Download the latest (beta) version (2026-05-24):
+Download the latest version (2026-05-24):
 
 👉 [Download ModLR_0.1.29.tar.gz](./ModLR_0.1.29.tar.gz)
 
@@ -79,7 +79,7 @@ print(result)
 
 * Daryanto, A. (2019). Avoiding spurious moderation effects: An information-theoretic approach to moderation analysis. Journal of Business Research, 103, 110-118.
 
-* The CRAN URL, hopefully, will appear soon.
+* Daryanto A (2026). ModLR: Moderated Regression and Model Comparison. R package version 0.1.20.
 
 * A manuscript describing this package is currently being prepared for submission to [The R Journal](https://journal.r-project.org/).
 
